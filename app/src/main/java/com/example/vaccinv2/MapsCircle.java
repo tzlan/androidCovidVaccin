@@ -34,7 +34,6 @@ public class MapsCircle extends FragmentActivity implements OnMapReadyCallback {
 
         // Add a marker in Sydney and move the camera
         LatLng A = new LatLng(48.860545, 2.337819);
-
         LatLng B = new LatLng(49.702075, 0.200462);
         LatLng C = new LatLng(47.535847, -2.628342);
         LatLng D = new LatLng(43.24149731245066, 5.8823190737961895);
@@ -52,128 +51,185 @@ public class MapsCircle extends FragmentActivity implements OnMapReadyCallback {
         LatLng P = new LatLng(45.74212493256729,4.775991674184636);
         LatLng r = new LatLng(49.540800049108476,3.6724148799179757);
 
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(A));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(A , 5));
+        mMap.getUiSettings().setZoomControlsEnabled(true);
+        CircleOptions circleOptions = new CircleOptions();
+        circleOptions.center(A);
+        circleOptions.radius(17000);
+        circleOptions.fillColor(Color.CYAN);
+        mMap.addCircle(circleOptions);
 
 
-        //mMap.addMarker(new MarkerOptions().position(A).title("Zone à risque"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(A));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(A , 5));
+        mMap.getUiSettings().setZoomControlsEnabled(true);
+        CircleOptions circleOptions1 = new CircleOptions();
+        circleOptions1.center(B);
+        circleOptions1.radius(17000);
+        circleOptions1.fillColor(Color.CYAN);
+        mMap.addCircle(circleOptions1);
+
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(A));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(A , 5));
+        mMap.getUiSettings().setZoomControlsEnabled(true);
+        CircleOptions circleOptions2 = new CircleOptions();
+        circleOptions2.center(C);
+        circleOptions2.radius(17000);
+        circleOptions2.fillColor(Color.CYAN);
+        mMap.addCircle(circleOptions2);
+
+
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(A));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(A , 5));
+        mMap.getUiSettings().setZoomControlsEnabled(true);
+        CircleOptions circleOptions3 = new CircleOptions();
+        circleOptions3.center(D);
+        circleOptions3.radius(17000);
+        circleOptions3.fillColor(Color.CYAN);
+        mMap.addCircle(circleOptions3);
 
 
 
         mMap.moveCamera(CameraUpdateFactory.newLatLng(A));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(A , 5));
         mMap.getUiSettings().setZoomControlsEnabled(true);
-
-        CircleOptions circleOptions = new CircleOptions();
-
-        circleOptions.radius(30000);
-        circleOptions.fillColor(Color.RED);
-        circleOptions.strokeWidth(6);
-        mMap.addCircle(circleOptions);
-
-        CircleOptions circleOptions1 = new CircleOptions();
-
-        circleOptions1.radius(30000);
-        circleOptions1.fillColor(Color.CYAN);
-        circleOptions1.strokeWidth(6);
-        mMap.addCircle(circleOptions1);
-
-        CircleOptions circleOptions2 = new CircleOptions();
-
-        circleOptions2.radius(30000);
-        circleOptions2.fillColor(Color.YELLOW);
-        circleOptions2.strokeWidth(6);
-        mMap.addCircle(circleOptions2);
-
-        CircleOptions circleOptions3 = new CircleOptions();
-
-        circleOptions3.radius(30000);
-        circleOptions3.fillColor(Color.RED);
-        circleOptions3.strokeWidth(6);
-        mMap.addCircle(circleOptions3);
-
         CircleOptions circleOptions4 = new CircleOptions();
-
-        circleOptions4.radius(30000);
-        circleOptions4.fillColor(Color.GREEN);
-        circleOptions4.strokeWidth(6);
+        circleOptions4.center(E);
+        circleOptions4.radius(17000);
+        circleOptions4.fillColor(Color.CYAN);
         mMap.addCircle(circleOptions4);
 
-        CircleOptions circleOptions5 = new CircleOptions();
 
-        circleOptions5.radius(30000);
-        circleOptions5.fillColor(Color.BLUE);
-        circleOptions5.strokeWidth(6);
+
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(A));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(A , 5));
+        mMap.getUiSettings().setZoomControlsEnabled(true);
+        CircleOptions circleOptions5 = new CircleOptions();
+        circleOptions5.center(F);
+        circleOptions5.radius(17000);
+        circleOptions5.fillColor(Color.CYAN);
         mMap.addCircle(circleOptions5);
 
-        CircleOptions circleOptions6 = new CircleOptions();
 
-        circleOptions6.radius(30000);
-        circleOptions6.fillColor(Color.GRAY);
-        circleOptions6.strokeWidth(6);
-        mMap.addCircle(circleOptions6);
 
-        CircleOptions circleOptions7 = new CircleOptions();
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(A));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(A , 5));
+        mMap.getUiSettings().setZoomControlsEnabled(true);
+        CircleOptions PILOS = new CircleOptions();
+        PILOS.center(G);
+        PILOS.radius(17000);
+        PILOS.fillColor(Color.CYAN);
+        mMap.addCircle(PILOS);
 
-        circleOptions7.radius(30000);
-        circleOptions7.fillColor(Color.RED);
-        circleOptions7.strokeWidth(6);
-        mMap.addCircle(circleOptions7);
 
-        CircleOptions circleOptions8 = new CircleOptions();
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(A));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(A , 5));
+        mMap.getUiSettings().setZoomControlsEnabled(true);
+        CircleOptions PILO = new CircleOptions();
+        PILO.center(H);
+        PILO.radius(17000);
+        PILO.fillColor(Color.CYAN);
+        mMap.addCircle(PILO);
 
-        circleOptions8.radius(30000);
-        circleOptions8.fillColor(Color.YELLOW);
-        circleOptions8.strokeWidth(6);
-        mMap.addCircle(circleOptions8);
 
-        CircleOptions circleOptions9 = new CircleOptions();
 
-        circleOptions9.radius(30000);
-        circleOptions9.fillColor(Color.CYAN);
-        circleOptions9.strokeWidth(6);
-        mMap.addCircle(circleOptions9);
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(A));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(A , 5));
+        mMap.getUiSettings().setZoomControlsEnabled(true);
+        CircleOptions TIBO = new CircleOptions();
+        TIBO.center(I);
+        TIBO.radius(17000);
+        TIBO.fillColor(Color.CYAN);
+        mMap.addCircle(TIBO);
 
-        CircleOptions circleOptions10 = new CircleOptions();
 
-        circleOptions10.radius(30000);
-        circleOptions10.fillColor(Color.CYAN);
-        circleOptions10.strokeWidth(6);
-        mMap.addCircle(circleOptions10);
 
-        CircleOptions circleOptions11 = new CircleOptions();
-        circleOptions11.center(A);
-        circleOptions11.radius(30000);
-        circleOptions11.fillColor(Color.BLUE);
-        circleOptions11.strokeWidth(6);
-        mMap.addCircle(circleOptions11);
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(A));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(A , 5));
+        mMap.getUiSettings().setZoomControlsEnabled(true);
+        CircleOptions JUJU = new CircleOptions();
+        JUJU.center(J);
+        JUJU.radius(17000);
+        JUJU.fillColor(Color.CYAN);
+        mMap.addCircle(JUJU);
 
-        CircleOptions circleOptions12 = new CircleOptions();
 
-        circleOptions12.radius(30000);
-        circleOptions12.fillColor(Color.YELLOW);
-        circleOptions12.strokeWidth(6);
-        mMap.addCircle(circleOptions12);
 
-        CircleOptions circleOptions13 = new CircleOptions();
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(A));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(A , 5));
+        mMap.getUiSettings().setZoomControlsEnabled(true);
+        CircleOptions NHNH = new CircleOptions();
+        NHNH.center(K);
+        NHNH.radius(17000);
+        NHNH.fillColor(Color.CYAN);
+        mMap.addCircle(NHNH);
 
-        circleOptions13.radius(30000);
-        circleOptions13.fillColor(Color.MAGENTA);
-        circleOptions13.strokeWidth(6);
-        mMap.addCircle(circleOptions13);
 
-        CircleOptions circleOptions14 = new CircleOptions();
 
-        circleOptions14.radius(30000);
-        circleOptions14.fillColor(Color.LTGRAY);
-        circleOptions14.strokeWidth(6);
-        mMap.addCircle(circleOptions14);
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(A));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(A , 5));
+        mMap.getUiSettings().setZoomControlsEnabled(true);
+        CircleOptions FDSFFDSFFD = new CircleOptions();
+        FDSFFDSFFD.center(L);
+        FDSFFDSFFD.radius(17000);
+        FDSFFDSFFD.fillColor(Color.CYAN);
+        mMap.addCircle(FDSFFDSFFD);
 
-        CircleOptions circleOptions15 = new CircleOptions();
-        circleOptions15.center(A);
-        circleOptions15.radius(30000);
-        circleOptions15.fillColor(Color.DKGRAY);
-        circleOptions15.strokeWidth(6);
-        mMap.addCircle(circleOptions15);
 
+
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(A));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(A , 5));
+        mMap.getUiSettings().setZoomControlsEnabled(true);
+        CircleOptions FDSFFSD = new CircleOptions();
+        FDSFFSD.center(M);
+        FDSFFSD.radius(17000);
+        FDSFFSD.fillColor(Color.CYAN);
+        mMap.addCircle(FDSFFSD);
+
+
+
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(A));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(A , 5));
+        mMap.getUiSettings().setZoomControlsEnabled(true);
+        CircleOptions AZ = new CircleOptions();
+        AZ.center(N);
+        AZ.radius(17000);
+        AZ.fillColor(Color.CYAN);
+        mMap.addCircle(AZ);
+
+
+
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(A));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(A , 5));
+        mMap.getUiSettings().setZoomControlsEnabled(true);
+        CircleOptions circFleOptions1 = new CircleOptions();
+        circFleOptions1.center(O);
+        circFleOptions1.radius(17000);
+        circFleOptions1.fillColor(Color.CYAN);
+        mMap.addCircle(circFleOptions1);
+
+
+
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(A));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(A , 5));
+        mMap.getUiSettings().setZoomControlsEnabled(true);
+        CircleOptions FDSF = new CircleOptions();
+        FDSF.center(P);
+        FDSF.radius(17000);
+        FDSF.fillColor(Color.CYAN);
+        mMap.addCircle(FDSF);
+
+
+
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(A));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(A , 5));
+        mMap.getUiSettings().setZoomControlsEnabled(true);
+        CircleOptions FDS = new CircleOptions();
+        FDS.center(r);
+        FDS.radius(17000);
+        FDS.fillColor(Color.CYAN);
+        mMap.addCircle(FDS);
 
 
 
